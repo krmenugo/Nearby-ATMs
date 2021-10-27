@@ -21,7 +21,8 @@ public class Controller {
 	public String main(final Model model) {
 		NearbyATM atms = (NearbyATM) service.parse(JSON_COUNTRY_URL);
 		model.addAttribute(JSON_COUNTRY_URL, atms.getServicios());
-		return MAIN_PAGE;
+		//return MAIN_PAGE;
+		return JSON_COUNTRY_URL;
 	}
 	
 }
