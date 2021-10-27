@@ -1,11 +1,13 @@
-<%@ page language='java' contentType='text/html;charset=iso-8859-1'%>
-<%@ page import='java.util.Date' %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
   <head>
     <title>Nearby ATM's</title>
   </head>
   <body>
-    <p>...</p>
-    <p>Los cajeros cercanos, son:  <%= new Date() %></p>
+    
+    Service Name: ${NearbyATM.getServicios()}
+
   </body>
 </html>
